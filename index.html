@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head >
+        <!-- head
+
+        Purpose:
+        - Title used here shows up in the browser tab
+        - Link to the favicon (small image that appears in the browser tab)
+        - Link to the CSS file (used to style the webpage)
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 2 (STRETCH FEATURE) (favicon)
+        - [ ] Any time after
+        -->
+        <title></title>
+        <link rel="stylesheet" href="styles.css">
+       
+    </head>
+    
+    <body>
+    
+        <!-- navbar [PLACEHOLDER] [ADDED IN UNIT 4] -->
+        <!-- navbar
+
+        Purpose:
+        - Navigation bar that allows users to jump to different sections of the webpage
+        - Also holds buttons for user settings (dark mode, reduce motion)
+
+        When To Modify:
+        - [ ] Project 4 (REQUIRED FEATURE)
+        - [ ] Project 5 (REQUIRED FEATURE) 
+        - [ ] Project 8 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        -->
+        <div class="navbar ">
+            <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Types">Types</a></li>
+            <li><a href="#Examples">Examples</a></li>
+            <button type="button" id = 'theme-button'> Dark Mode </button>
+            </ul>
+        </div>
+
+
+        <!-- headings
+
+        Purpose:
+        - Main header section of the webpage
+        - Contains the title, subtitle, image, and key buttons for the webpage
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 3 (REQUIRED FEATURE) 
+        - [ ] Project 4 (REQUIRED FEATURE) 
+        - [ ] Any time after
+        -->
+        <section id="home">
+            <div class="header-container">
+                
+                <div class="header-item">
+                    <img id="header-img" src="./img/cute-watercolor-cartoon-character-cat-reading-book-white-background_273525-2378-removebg-preview.png" />
+                </div>
+                
+                <div class="header-item">
+                    <h1>Cat Breed Encyclopedia</h1>
+                    <h2>Discover the Purr-fect Breed for You!</h2>
+                    <button type="button">Submit your cat</button>
+                    <button type="button">Find your match</button>
+                </div>
+
+            </div>
+        </section>
+
+        
+
+        
+
+        
+        <!-- about
+
+        Purpose:
+        - Section for general info about the event
+        - Contains a video, description, and key points about the event
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 2 (STRETCH FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        -->
+        <section id="About">
+            <h2>About</h2>
+            <p>This website is a fun and educational guide to cat breeds, 
+                offering detailed profiles, care tips, 
+                and interactive tools to help users learn more 
+                about their feline friends. 
+                It’s designed for current and future cat owners,
+                families, animal lovers, and anyone curious about 
+                different cat personalities and needs. 
+                Whether you're choosing your first cat or just love learning about 
+                them, this site helps you discover the purr-fect breed for you.</p>
+
+            <h3>Different Types</h3>
+            <h4></h4>
+            <ul>
+                <li> <b>Long Haired</b> </li>
+                <li> <b>Short Haired</b> </li>
+                <li> <b>Hairless</b> </li>
+                <li> <b>Unique Traits</b> </li>
+            </ul>
+        </section> 
+        
+
+        <!-- schedule
+
+        Purpose:
+        - Section for specific info about the event's schedule
+        - Contains images and descriptions of each activity
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+        <section id="Types">
+            <h2>Types of Cats</h2>
+
+            <img alt="Scottish Fold Cat" width="350" height="200" src="./img/cat.webp"/>
+            <h3>Scottish Fold</h3>
+            <p>The Scottish Fold is known for its adorable folded ears, round face, and calm, sweet nature. 
+                They are affectionate, playful, and enjoy being around people.</p>
+                
+            <img alt="Ragdoll Cat" width="350" height="250" src="./img/ragdoll.webp"/>
+            <h3>Ragdoll</h3>
+            <p>Ragdolls are gentle, blue-eyed cats that love to be held and cuddled. 
+                They are relaxed, friendly, and great for families or first-time cat owners.</p>
+
+            <img alt="Persian Cat" width="350" height="250" src="./img/persian-cats.webp"/>
+            <h3>Persian</h3>
+            <p>The Persian cat is elegant and fluffy with a calm, gentle personality.
+                Known for its flat face and luxurious coat, it loves quiet environments and lots of pampering.</p>
+
+        </section>
+        
+        <!-- rsvp
+
+        Purpose:
+        - Section for users to sign up for the event
+        - Contains a form for users to input their information, 
+        and a list of other users who have signed up
+
+        When To Modify:
+        - [ ] Project 6 (REQUIRED FEATURE) 
+        - [ ] Project 6 (STRETCH FEATURE) 
+        - [ ] Any time after
+        --> 
+        <div id="rsvp">
+            <h2>RSVP</h2>
+            <div class="rsvp-container">
+                <div class="rsvp-para">
+                    Looking for a fun and relaxing way to 
+                    spend your day? Come visit the local 
+                    animal shelter in Queens, NYC, and 
+                    hang out with some adorable, friendly cats! 
+                    Whether you're a lifelong cat lover or just looking for a cozy break, 
+                    our furry friends would love your company.
+                </div>
+                <div class="rsvp-participants">
+                    <p>🎟️ Divia from Queens has RSVP'd.</p>
+                    <p>🎟️ Amy from Brooklyn has RSVP'd.</p>
+                    <p>🎟️ Esa from Staten Island has RSVP'd.</p>
+                </div>
+                
+        </div>
+
+
+        <!--- Sign RSVP Form --->
+        <div class="form-container">
+            <form id="rsvp-form" title="rsvp-form">
+             
+                <label for=name>
+                    Name:
+                </label>
+                <input id="name" type = "text" placeholder="Alice">
+                <label for= place>
+                    Borough:
+                </label>
+                <input id="place" type = "text" placeholder="Queens" >
+                <label for=email>
+                    Email:
+                </label>
+                <input id="email" type = "text" placeholder="loopy@gmail.com">
+        
+            </form>
+            <!-- Submit button -->
+            <button id="rsvp-button">Submit RSVP</button>
+        </div>      
+    </div>
+
+            <!-- success modal
+
+    Purpose:
+    - Modal that appears when a user successfully signs up for the event
+    - Contains a personalized message and image
+
+    When To Modify:
+    - [ ] Project 9 (REQUIRED FEATURE)
+    - [ ] Project 9 (STRETCH FEATURE) 
+    - [ ] Any time after
+    --> 
+
+        <div id="success-modal" class="modal">
+            <div class="modal-container">
+                <div id="modal-item">
+                    <button id="close-modal">close</button>
+                    <p id="modal-text"> You are now signed up for the cattiest event! </p>
+                </div>
+                <div id="modal-item">
+                    <img id="modal-img" src="img/happy_cat.webp" alt="Cat smiling at you">
+                </div>
+            </div>
+        </div>
+
+        <!-- links
+
+        Purpose:
+        - Links to other resources related to the event
+
+        When To Modify:
+        - [ ] Project 2 (STRETCH FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+        <section id="Examples">
+            <h2>Links</h2>
+
+            <!-- This <a> block is one link.  Copy and paste all 6 lines to create another link. -->
+            <a class="block" href="https://www.youtube.com/watch?v=uLaoN6DGVi0&ab_channel=BowieTheRagdollCat">
+                <article>
+                    <h3>Ragdoll Meows</h3>
+                    <p>Compilation of Cats Meowing</p>
+                </article>
+            </a>
+                
+            <!-- footer [PLACEHOLDER] [ADDED IN UNIT 3] -->
+            <div class="footer">
+                <p>
+                    Contact Us
+                <p>
+
+            </div>
+
+        </section>
+        
+          
+    
+    <script src="index.js"></script>
+    </body>
+</html>

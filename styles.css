@@ -1,0 +1,409 @@
+/*** You will not need this file until Unit 3 ***/
+/***eEDU preview fix 
+
+  Purpose:
+  - Fix VSCodeEDU issue that causes a white border to show around
+    the preview window
+
+  When To Modify:
+  - If you change the background color of your webpage, you may need to update this rule too.
+***/
+html {
+    background-color: var(--bg-color);
+}
+
+/*** body ***
+  
+  Purpose:
+  - Add style rules for the body of your webpage
+  - This is useful if you want a rule to apply to EVERYTHING on your page
+    - (Tip: You can always override these rules later in the stylesheet)
+
+  When To Modify:
+  - [ ] Project 3 (REQUIRED FEATURE) 
+  - [ ] Any time after
+***/
+
+body {
+    /* Add a background color or image */
+   font-family: 'Noto Sans JP', sans-serif;
+    background-color: #f8ddbd;
+    color: #3d3d3d;
+    padding: 0;
+    /* Put space around the edges of the webpage */
+    margin: 0;
+}
+
+/*** Text ***
+  
+  Purpose: 
+  - Add style rules for headings (h1-6),
+    paragraphs (p), links (a), and buttons
+
+  When To Modify:
+  - [X] Project 3 (REQUIRED FEATURE) 
+  - [ ] Any time after
+***/
+
+h1, h2, h3,h4 {
+  font-family: 'Zen Maru Gothic', sans-serif;
+  letter-spacing: 0px;
+}
+
+p {
+    p {
+  font-family: 'Zen Maru Gothic', sans-serif; 
+  font-size: 1.1rem;
+  color: #444444;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+}
+
+a,
+a * {
+  color: #4975cd; 
+  text-decoration: none;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  border-bottom: 1px solid transparent;
+    
+}
+a:link {
+  color: blue;
+}
+
+a:visited{
+  color: blue;
+}
+a:hover {
+  color: blue;
+}
+a:active {
+  color: blue;
+}
+button {
+
+    background-color: #d25981;   
+    color: rgb(255, 255, 255);                
+    border: none;                
+    padding: 8px 16px;           
+    border-radius: 5px;         
+    cursor: pointer;             
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #f75c9c; /* darker pink on hover */
+  box-shadow: 0 6px 12px rgba(247, 92, 156, 0.6);
+  transform: translateY(-3px); /* subtle lift effect */
+}
+
+/*** header ***
+  
+  Purpose:
+  - Add style rules for your website's header section
+
+  When To Modify:
+  - [X] Project 3 (REQUIRED FEATURE) 
+  - [ ] Project 4 (REQUIRED FEATURE) 
+  - [ ] Any time after
+***/
+
+.header-container { /* Example A: This styles elements with class="header" */
+  display: flex;
+  justify-content: center;  /* centers children horizontally */
+  align-items: center;  
+  background-color: #fce4ec; /* soft pink */
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 19px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(255, 143, 193, 0.3);
+}
+
+.header-item:nth-of-type(1){
+
+  width: 45%;
+
+}
+.header-item:nth-of-type(2){
+
+  width: 55%;
+
+}
+#header-img{
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+}
+#header-button{
+  background-color: #ff8fc1;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+/*** footer ***
+  
+  Purpose:
+  - Add style rules for your website's footer section
+
+  When To Modify:
+  - [ ] Project 3 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+
+.footer { /* Example B: This styles elements with class="footer" */
+  background-color: #fce4ec; /* soft pink */
+  text-align: left;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+}
+
+/*** Navbar [PLACEHOLDER] [ADDED IN UNIT 4] ***/
+/*** Navigation bar (navbar) ***
+  
+  Purpose:
+  - Add style rules for your website's navbar
+
+  When To Modify:
+  - [ ] Project 4 (REQUIRED FEATURE) 
+  - [ ] Any time after
+***/
+
+.navbar ul {
+  list-style-type: none;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  background-color: #d25981;
+  z-index: 1000;
+}
+
+.navbar ul li {
+    float: left;
+    margin: 10px;
+    
+}
+
+.navbar ul li a {
+  display: block;
+  text-decoration: none;
+  color: #f4edef;
+  text-align: center;
+  padding: 5;
+}
+
+.navbar ul li a:hover {
+  background-color: #ffe1eb;
+  text-decoration: underline;
+  border-radius: 10px;
+  padding: 10px;
+  display: inline-block;
+  color: #d81e5b;
+}
+
+
+/*** About Section ***
+  
+  Purpose:
+  - Add style rules for your website's About section
+
+  When To Modify:
+  - [ ] Project 3 (OPTIONAL)
+  - [ ] Project 4 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+#About,
+#Types,
+#Examples{
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+ 
+
+}
+
+/*** RSVP Section ***
+  
+  Purpose:
+  - Add style rules for your website's RSVP form
+
+  When To Modify:
+  - [ ] Project 6 (REQUIRED FEATURE)
+  - [ ] Project 7 (REQUIRED FEATURE)
+  - [ ] Any time after
+***/
+
+.rsvp-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.rsvp-para {
+  width: 55%;
+  padding-right: 10px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.error {
+  border: 2px solid red;
+  background-color: #ffe6e6;
+  border-radius: 4px;
+  outline: none;
+  box-shadow: 0 0 5px red;
+}
+
+
+/* Add other rsvp-related selectors here */
+/*** Animations [PLACEHOLDER] [ADDED IN UNIT 8] ***/
+.modal {
+  display: none;   /* modal should be hidden by default*/
+  position: fixed; /* modal cannot move around the screen */
+  z-index: 2;      /* modal appears above other elements */ 
+  
+  /* TODO: Make the modal fill the entire screen */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  /* Add a semi-transparent background to shadow non-modal elements*/
+  background-color: rgba(0,0,0,0.4); /* 40% opacity black */
+
+  /* Flexbox settings for modal */
+  /* These won't apply until we update "display:" from "hidden" to "flex" in our JS */
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-container {
+    /* Change modal size and spacing here */
+    padding: 50px;
+    width: 55%;
+
+    /* Customize modal style here */
+    background-color: rgb(232, 102, 154);
+    color: black;
+    text-align: center;
+    font-size: 1rem;
+    font-family: monospace;
+
+    /* Optional: Use flexbox to customize .modal-item layout */
+    display: flex;
+
+}
+
+#modal-img{
+  width: 100px;
+  height: 100px;
+
+}
+
+/* Default dark mode style */
+#theme-button{
+  text-decoration: underline  #ff8fc1;
+  font-family: 'Arial', sans-serif;
+  color: #fce4ec;
+  padding: 1px, 1px;
+  margin: 5px ;
+  border: 1px solid #d25981;
+  border-width: 1px;
+  background: linear-gradient(to right, #ff8fc1, #d81e5b);
+  cursor: pointer;
+
+}
+
+#close-modal{
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1001;
+  transition: color 0.3s ease;
+}
+.dark-mode ,
+.dark-mode div {
+  background-color: #1e1e2f;
+  color: #fce4ec; 
+}
+
+/* Example: Different dark mode style for h1 */
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3 {
+
+  color: #fce4ec; 
+}
+
+/* Example: Different dark mode style for visited links */
+.dark-mode a:visited * {
+   color: #ff8fc1;
+
+}
+
+
+/*** Custom Colors (OPTIONAL) ***
+  
+  Purpose:
+  - Use CSS variables to define custom colors for your website
+  - To get you started, we've provided the color scheme used in our example site.
+  - To reference a color variable in your css, use var(--variable-name) in place of a color value
+
+  When To Modify:
+  - [ ] Any time (OPTIONAL)
+***/
+
+:root {
+    /* Light Mode */
+    --bg-color: #a6a0cf;
+    --text-color: #231942;
+
+    /* Dark Mode */
+    --bg-color-dark-mode: #3e3377;
+    --text-color-dark-mode: #fff;
+
+    /* Accent Colors */
+    --accent-color-light: #d2cff5;
+    --accent-color-medium: #684fb5;
+    --accent-color-dark: #482f95;
+    --accent-color-darkest: #231942;
+    --accent-color-green: #28eb76;
+
+    /* Error Colors */
+    --error-color: #f8bbd0;
+    --error-color-border: #e63946;
+}
